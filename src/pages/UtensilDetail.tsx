@@ -1,5 +1,6 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { UTENSILS } from "../data/utensils";
+import { CATEGORY_META } from "../data/utensils";
 import utensilImageMap from "../utils/utensilImages";
 
 
@@ -18,35 +19,46 @@ export default function UtensilDetail() {
   return (
     <article className="max-w-3xl space-y-5">
       <div className="flex items-start gap-4">
-        <div className="w-24 h-24 rounded-2xl bg-gray-100 border flex items-center justify-center overflow-hidden">
-            {utensilImageMap[u.id] ? (
+        <div className="w-24 h-24 rounded-2xl bg-gray-100 border overflow-hidden">
+            {utensilImageMap[u.id] && (
                 <img
                 src={utensilImageMap[u.id]}
                 alt={u.name}
                 className="object-contain w-full h-full"
                 />
-            ) : (
-                <span className="text-gray-400 text-2xl">🖼️</span>
             )}
         </div>
         <div>
           <h1 className="text-2xl font-bold">{u.name}</h1>
           <div className="mt-2 flex flex-wrap gap-2">
-            <Badge label="Tevila" intent={u.tevila} />
-            <Badge label="Brocha" intent={u.brocha} />
+            <Badge label={u.tevila === "yes" ? "Tevila: Required" : u.tevila === "no" ? "Tevila: Not Required" : "Tevila: Varies"} intent={u.tevila} />
+            <Badge label={u.brocha === "yes" ? "Brocha: Yes" : u.brocha === "no" ? "Brocha: No" : "Brocha: Varies"} intent={u.brocha} />
           </div>
         </div>
       </div>
-
-      <p className="text-gray-700">
-        For many utensils, the status depends on <Link className="underline decoration-sky-400" to="/materials">material</Link> and typical use (e.g., table vs. storage, raw vs. ready-to-eat). See notes below and consult a Rav for specific situations.
-      </p>
 
       {u.notes && (
         <div className="rounded-2xl border bg-white p-4 shadow-sm">
           <h2 className="font-semibold mb-1">Notes</h2>
           <p className="text-gray-700">{u.notes}</p>
         </div>
+      )}
+
+      {u.debates && (
+        <div className="rounded-2xl border border-amber-200 bg-amber-50 p-4 shadow-sm">
+          <h2 className="font-semibold mb-1 flex items-center gap-2">
+            <span className="inline-flex items-center justify-center w-4 h-4 rounded-full border border-amber-400 text-amber-600 font-bold leading-none flex-shrink-0" style={{ fontSize: "10px" }}>i</span>
+            Halachic Debate
+          </h2>
+          <p className="text-gray-700 text-sm leading-relaxed">{u.debates}</p>
+        </div>
+      )}
+
+      {/* Category */}
+      {u.category && CATEGORY_META[u.category] && (
+        <p className="text-sm text-gray-500">
+          Category: {CATEGORY_META[u.category].icon} {CATEGORY_META[u.category].label}
+        </p>
       )}
     </article>
   );

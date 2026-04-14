@@ -36,10 +36,14 @@ const SECTIONS = [
     ],
   },
   {
-    h: "Assemblies & appliances",
+    h: "Electric appliances",
     p: [
-      "Appliances with food-contact parts: immerse the parts that contact food (e.g., metal blades, bowls). The electric base is not immersed.",
-      "If immersion will ruin an item (e.g., internal electronics), do not tovel it; ask a Rav for alternatives (e.g., gift/borrow arrangements).",
+      "Electric appliances with metal or glass parts that contact food require tevila (e.g., blender blades, urn interior, grill plates).",
+      "The motor, base, and electrical housing do not require tevila.",
+      "Most poskim reject the view that plug-in appliances are exempt as 'attached to the ground' (mechubbar la'karka).",
+      "If immersion will ruin the appliance, consult a Rav. Common solutions: (a) have a Jewish technician disassemble and reassemble the metal parts, creating a 'new keili'; (b) give the appliance as a gift to a non-Jew and borrow it back.",
+      "After toveling an electric appliance, let it dry thoroughly for at least 48 hours before use. A blow-dryer helps eliminate internal moisture.",
+      "The plug and cord generally do not need to be immersed. If the cord is not removable, only the part close to the body of the appliance needs to be submerged.",
     ],
   },
   {

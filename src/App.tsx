@@ -4,6 +4,7 @@ import Procedure from "./pages/Procedure";
 import BasicRules from "./pages/BasicRules";
 import Materials from "./pages/Materials";
 import UtensilDetail from "./pages/UtensilDetail";
+import Halachos from "./pages/Halachos";
 
 function TopBar() {
   const location = useLocation();
@@ -20,7 +21,7 @@ function TopBar() {
   return (
     <header className="sticky top-[env(safe-area-inset-top,0px)] z-20 border-b border-slate-200 bg-gradient-to-r from-sky-50 to-emerald-50">
       <div className="mx-auto w-full max-w-screen-xl px-3 sm:px-4">
-        {/* ---------- sm+ : single compact row (4-column grid) ---------- */}
+        {/* ---------- sm+ : single compact row (5-column grid) ---------- */}
         <div className="hidden sm:block py-2">
           {showBack && (
             <button
@@ -32,7 +33,7 @@ function TopBar() {
               ←
             </button>
           )}
-          <div className="grid grid-cols-4 items-center gap-2">
+          <div className="grid grid-cols-5 items-center gap-2">
             {/* title */}
             <Link
               to="/"
@@ -76,6 +77,18 @@ function TopBar() {
             >
               Materials
             </NavLink>
+
+            {/* Far-right option */}
+            <NavLink
+              to="/halachos"
+              className={({ isActive }) =>
+                `justify-self-end text-center whitespace-nowrap rounded-2xl px-3 py-1.5 text-sm
+                ring-1 ring-slate-200 shadow-sm bg-white/70 hover:bg-white transition
+                ${isActive ? "bg-white" : ""}`
+              }
+            >
+              Halachos
+            </NavLink>
           </div>
         </div>
 
@@ -109,6 +122,9 @@ function TopBar() {
               <NavLink to="/materials" className={({ isActive }) => pillSm(isActive)}>
                 Materials
               </NavLink>
+              <NavLink to="/halachos" className={({ isActive }) => pillSm(isActive)}>
+                Halachos
+              </NavLink>
             </div>
           </nav>
         </div>
@@ -128,12 +144,13 @@ export default function App() {
           <Route path="/procedure" element={<Procedure />} />
           <Route path="/rules" element={<BasicRules />} />
           <Route path="/materials" element={<Materials />} />
+          <Route path="/halachos" element={<Halachos />} />
           <Route path="/utensil/:id" element={<UtensilDetail />} />
         </Routes>
       </main>
       <footer className="border-t">
         <div className="mx-auto w-full max-w-screen-xl px-3 sm:px-4 py-4 text-sm text-gray-600">
-          © {new Date().getFullYear()} Keilim — educational use only; ask a Rav for psak.
+          © {new Date().getFullYear()} Keilim — educational use only; always ask a Rav for psak. Sources include STAR-K, CRC, OU, and published poskim.
         </div>
       </footer>
     </div>
