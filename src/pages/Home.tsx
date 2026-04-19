@@ -75,7 +75,6 @@ export default function Home() {
       <SearchBar
         placeholder="Search utensils, halachos, materials (e.g., 'air fryer', 'teflon', 'brocha')…"
         onChange={setQ}
-        autoFocus
       />
 
       {/* Category Pills — scrollable on mobile */}
