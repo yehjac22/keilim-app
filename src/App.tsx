@@ -25,7 +25,7 @@ function TopBar() {
         <div className="hidden sm:block py-2">
           {showBack && (
             <button
-              onClick={() => nav("/")}
+              onClick={() => nav("/", { replace: true })}
               className="absolute left-4 top-1/2 -translate-y-1/2 text-4xl font-extrabold text-slate-800"
               aria-label="Back to home"
               title="Back to home"
@@ -37,6 +37,7 @@ function TopBar() {
             {/* title */}
             <Link
               to="/"
+              replace
               className="justify-self-center text-xl font-extrabold tracking-tight text-slate-800"
             >
               Keilim
@@ -97,7 +98,7 @@ function TopBar() {
           <div className="relative flex items-center justify-center py-1">
             {showBack && (
               <button
-                onClick={() => nav("/")}
+                onClick={() => nav("/", { replace: true })}
                 className="absolute left-4 top-1/2 -translate-y-1/2 text-4xl font-extrabold text-slate-800"
                 aria-label="Back to home"
                 title="Back to home"
@@ -106,7 +107,7 @@ function TopBar() {
               </button>
             )}
             
-            <Link to="/" className="text-lg font-extrabold tracking-tight text-slate-800">
+            <Link to="/" replace className="text-lg font-extrabold tracking-tight text-slate-800">
               Keilim
             </Link>
           </div>
