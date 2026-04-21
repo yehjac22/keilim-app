@@ -1,5 +1,11 @@
 export type Need = "yes" | "no" | "varies";
 
+export type CategoryMeta = {
+  label: string;
+  icon: string;
+  description: string;
+};
+
 export type Utensil = {
   id: string;
   name: string;
@@ -12,15 +18,9 @@ export type Utensil = {
   tags?: string[];
 };
 
-export type Category =
-  | "electric"
-  | "cooking"
-  | "tableware"
-  | "food-prep"
-  | "drinks-bottles"
-  | "storage-misc";
+export type Category = string;
 
-export const CATEGORY_META: Record<Category, { label: string; icon: string; description: string }> = {
+export const CATEGORY_META: Record<string, CategoryMeta> = {
   electric:        { label: "Electric Appliances",    icon: "⚡", description: "Toasters, urns, blenders, and more" },
   cooking:         { label: "Cooking & Bakeware",     icon: "🍳", description: "Pots, pans, baking sheets, racks" },
   tableware:       { label: "Tableware & Serving",    icon: "🍽️", description: "Plates, cups, cutlery, serving items" },
@@ -28,6 +28,65 @@ export const CATEGORY_META: Record<Category, { label: string; icon: string; desc
   "drinks-bottles":{ label: "Drinks & Bottles",       icon: "🥤", description: "Bottles, thermoses, kettles, urns" },
   "storage-misc":  { label: "Storage & Misc",         icon: "📦", description: "Containers, racks, brushes, misc" },
 };
+
+export const EXTENDED_CATEGORY_META: Record<string, CategoryMeta> = {
+  appliances: { label: "Appliances", icon: "⚡", description: "Electric and countertop appliances" },
+  bakeware: { label: "Bakeware", icon: "🍳", description: "Pans, trays, tins, and baking tools" },
+  bottles: { label: "Bottles", icon: "🥤", description: "Bottles, thermoses, and drink containers" },
+  containers: { label: "Containers", icon: "📦", description: "Storage containers and organizers" },
+  cookware: { label: "Cookware", icon: "🍳", description: "Pots, pans, lids, and cooking tools" },
+  cutlery: { label: "Cutlery", icon: "🍽️", description: "Knives, forks, spoons, and serving utensils" },
+  drinkware: { label: "Drinkware", icon: "🥤", description: "Cups, mugs, bottles, and beverage tools" },
+  glassware: { label: "Glassware", icon: "🍽️", description: "Glasses, bowls, and glass serving items" },
+  prep: { label: "Prep Tools", icon: "🔪", description: "Food prep tools and kitchen helpers" },
+  serveware: { label: "Serveware", icon: "🍽️", description: "Serving platters, bowls, and table items" },
+  storage: { label: "Storage", icon: "📦", description: "Storage items, bins, and kitchen organization" },
+};
+
+const CATEGORY_META_KEYWORDS: Array<{ pattern: RegExp; meta: CategoryMeta }> = [
+  { pattern: /(electric|appliance|urn|kettle|machine|mixer|blender)/, meta: { label: "Electric Appliances", icon: "⚡", description: "Electric and countertop appliances" } },
+  { pattern: /(cook|bake|pan|pot|tray|oven)/, meta: { label: "Cooking & Bakeware", icon: "🍳", description: "Pots, pans, trays, racks, and bakeware" } },
+  { pattern: /(table|serve|plate|cup|cutlery|flatware)/, meta: { label: "Tableware & Serving", icon: "🍽️", description: "Tableware, serving pieces, and cutlery" } },
+  { pattern: /(prep|knife|grater|peeler|slice|tool)/, meta: { label: "Food Prep Tools", icon: "🔪", description: "Prep tools, knives, peelers, and slicers" } },
+  { pattern: /(drink|bottle|thermos|mug|glass)/, meta: { label: "Drinks & Bottles", icon: "🥤", description: "Drinkware, bottles, thermoses, and beverage tools" } },
+  { pattern: /(store|storage|container|misc|organizer|rack)/, meta: { label: "Storage & Misc", icon: "📦", description: "Storage items, containers, racks, and misc tools" } },
+];
+
+function startCaseCategory(category: string): string {
+  return category
+    .split(/[-_\s]+/)
+    .filter(Boolean)
+    .map((segment) => segment.charAt(0).toUpperCase() + segment.slice(1))
+    .join(" ");
+}
+
+export function getCategoryMeta(category: string): CategoryMeta {
+  const normalizedCategory = (category || "uncategorized").trim().toLowerCase();
+  const fallbackLabel = startCaseCategory(normalizedCategory);
+
+  const exactMeta = CATEGORY_META[normalizedCategory] ?? EXTENDED_CATEGORY_META[normalizedCategory];
+  if (exactMeta) {
+    return exactMeta;
+  }
+
+  const keywordMeta = CATEGORY_META_KEYWORDS.find(({ pattern }) => pattern.test(normalizedCategory))?.meta;
+  if (keywordMeta) {
+    return {
+      ...keywordMeta,
+      label: fallbackLabel,
+    };
+  }
+
+  return {
+    label: fallbackLabel,
+    icon: "",
+    description: `Items in the ${fallbackLabel} category`,
+  };
+}
+
+export function getCategoryList(utensils: Utensil[]): Category[] {
+  return Array.from(new Set(utensils.map((utensil) => utensil.category).filter(Boolean)));
+}
 
 const Y: Need = "yes";
 const N: Need = "no";

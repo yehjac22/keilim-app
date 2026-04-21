@@ -1,0 +1,206 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:2:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/4e645b3e51174ce06f3d8129ad23e92d/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/4670df68fb0771065f987f1da8880602/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/b9472024d3c530b1a8261a20c08c8f59/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/de3f508df8e01e72bb2dd35f26bd642a/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.6.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/9852462d9d15873e1d476298e2004d07/transformed/activity-1.6.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/8fd8b2d229e56b301b4b7c20904358ee/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/ff83376876e7cee4a6a5f05466169897/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/d2cc62cd695c3945f76cda504d3fc8b1/transformed/emoji2-1.2.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/18d465714d7fb5ffab838ae954974e6c/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/d062433bbe91acaaa9d5b2d67b9dce5f/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/0216461906b4f24dcac36426c56cb063/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/95b35a6ec471915ee90cd84018488834/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/15456fe9e1a9d2f236ec0785de56f287/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.10.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/82172431d881f821344bfb6df5b4f287/transformed/core-1.10.1/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/8ce636888949e94000c214d3fe41b61d/transformed/lifecycle-viewmodel-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/9586a9b7bf9040ad0cba1b9b63934394/transformed/lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.10.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/8a73024bf60bad2d1c45ecb0d4561544/transformed/core-ktx-1.10.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/c1e1174c90f6ab450f09e35eb7bb5d23/transformed/savedstate-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/a511565b09c72c96917b5189e55e2ceb/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/df4f348b3f00f1b5fe42cc9c609b91d0/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/e667b3669403638640283a5b28081642/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/6aadca80302f9c551cd505b190dc9ba4/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/26f6e0965e1c5a7d906542b210647556/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/bdf1d2b3e63c4c9d6a9bc0f3e071c62b/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/f6c19c1629746529d9bab11f5d3c4b5d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/d7a0d974fb8d892f5124a6582995bedc/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/08cd67c9427b9afb7a88561a8fe52b12/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/d4f02574d10236dccf099b7d455e3b5f/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/c4feb03887d948d6e3b32afbb13c7a82/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+	package
+		INJECTED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:3:5-67
+	android:name
+		ADDED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:3:22-64
+application
+ADDED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:5:5-22:19
+INJECTED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:5:5-22:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/d2cc62cd695c3945f76cda504d3fc8b1/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/d2cc62cd695c3945f76cda504d3fc8b1/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.10.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/82172431d881f821344bfb6df5b4f287/transformed/core-1.10.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.10.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/82172431d881f821344bfb6df5b4f287/transformed/core-1.10.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/e667b3669403638640283a5b28081642/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/e667b3669403638640283a5b28081642/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/bdf1d2b3e63c4c9d6a9bc0f3e071c62b/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/bdf1d2b3e63c4c9d6a9bc0f3e071c62b/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/f6c19c1629746529d9bab11f5d3c4b5d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/f6c19c1629746529d9bab11f5d3c4b5d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+	android:extractNativeLibs
+		INJECTED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.10.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/82172431d881f821344bfb6df5b4f287/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:7:9-37
+	android:allowBackup
+		ADDED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:11:9-49
+	android:networkSecurityConfig
+		ADDED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:9:9-69
+	android:usesCleartextTraffic
+		ADDED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:8:9-44
+activity#com.keilim.kiosk.MainActivity
+ADDED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:12:9-21:20
+	android:screenOrientation
+		ADDED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:15:13-49
+	android:exported
+		ADDED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:14:13-36
+	android:name
+		ADDED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:13:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:16:13-20:29
+action#android.intent.action.MAIN
+ADDED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:17:17-69
+	android:name
+		ADDED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:19:17-77
+	android:name
+		ADDED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:19:27-74
+uses-sdk
+INJECTED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml
+INJECTED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/4e645b3e51174ce06f3d8129ad23e92d/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/4e645b3e51174ce06f3d8129ad23e92d/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/4670df68fb0771065f987f1da8880602/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/4670df68fb0771065f987f1da8880602/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/b9472024d3c530b1a8261a20c08c8f59/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/b9472024d3c530b1a8261a20c08c8f59/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/de3f508df8e01e72bb2dd35f26bd642a/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/de3f508df8e01e72bb2dd35f26bd642a/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.6.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/9852462d9d15873e1d476298e2004d07/transformed/activity-1.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.6.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/9852462d9d15873e1d476298e2004d07/transformed/activity-1.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/8fd8b2d229e56b301b4b7c20904358ee/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/8fd8b2d229e56b301b4b7c20904358ee/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/ff83376876e7cee4a6a5f05466169897/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/ff83376876e7cee4a6a5f05466169897/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/d2cc62cd695c3945f76cda504d3fc8b1/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/d2cc62cd695c3945f76cda504d3fc8b1/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/18d465714d7fb5ffab838ae954974e6c/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/18d465714d7fb5ffab838ae954974e6c/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/d062433bbe91acaaa9d5b2d67b9dce5f/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/d062433bbe91acaaa9d5b2d67b9dce5f/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/0216461906b4f24dcac36426c56cb063/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/0216461906b4f24dcac36426c56cb063/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/95b35a6ec471915ee90cd84018488834/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/95b35a6ec471915ee90cd84018488834/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/15456fe9e1a9d2f236ec0785de56f287/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/15456fe9e1a9d2f236ec0785de56f287/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.10.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/82172431d881f821344bfb6df5b4f287/transformed/core-1.10.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.10.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/82172431d881f821344bfb6df5b4f287/transformed/core-1.10.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/8ce636888949e94000c214d3fe41b61d/transformed/lifecycle-viewmodel-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/8ce636888949e94000c214d3fe41b61d/transformed/lifecycle-viewmodel-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/9586a9b7bf9040ad0cba1b9b63934394/transformed/lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/9586a9b7bf9040ad0cba1b9b63934394/transformed/lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.10.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/8a73024bf60bad2d1c45ecb0d4561544/transformed/core-ktx-1.10.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.10.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/8a73024bf60bad2d1c45ecb0d4561544/transformed/core-ktx-1.10.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/c1e1174c90f6ab450f09e35eb7bb5d23/transformed/savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/c1e1174c90f6ab450f09e35eb7bb5d23/transformed/savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/a511565b09c72c96917b5189e55e2ceb/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/a511565b09c72c96917b5189e55e2ceb/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/df4f348b3f00f1b5fe42cc9c609b91d0/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/df4f348b3f00f1b5fe42cc9c609b91d0/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/e667b3669403638640283a5b28081642/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/e667b3669403638640283a5b28081642/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/6aadca80302f9c551cd505b190dc9ba4/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/6aadca80302f9c551cd505b190dc9ba4/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/26f6e0965e1c5a7d906542b210647556/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/26f6e0965e1c5a7d906542b210647556/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/bdf1d2b3e63c4c9d6a9bc0f3e071c62b/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/bdf1d2b3e63c4c9d6a9bc0f3e071c62b/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/f6c19c1629746529d9bab11f5d3c4b5d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/f6c19c1629746529d9bab11f5d3c4b5d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/d7a0d974fb8d892f5124a6582995bedc/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/d7a0d974fb8d892f5124a6582995bedc/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/08cd67c9427b9afb7a88561a8fe52b12/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/08cd67c9427b9afb7a88561a8fe52b12/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/d4f02574d10236dccf099b7d455e3b5f/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/d4f02574d10236dccf099b7d455e3b5f/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/c4feb03887d948d6e3b32afbb13c7a82/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/c4feb03887d948d6e3b32afbb13c7a82/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+	android:targetSdkVersion
+		INJECTED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/d2cc62cd695c3945f76cda504d3fc8b1/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/e667b3669403638640283a5b28081642/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/e667b3669403638640283a5b28081642/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/f6c19c1629746529d9bab11f5d3c4b5d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/f6c19c1629746529d9bab11f5d3c4b5d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/d2cc62cd695c3945f76cda504d3fc8b1/transformed/emoji2-1.2.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/d2cc62cd695c3945f76cda504d3fc8b1/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/d2cc62cd695c3945f76cda504d3fc8b1/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/d2cc62cd695c3945f76cda504d3fc8b1/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/d2cc62cd695c3945f76cda504d3fc8b1/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/d2cc62cd695c3945f76cda504d3fc8b1/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/d2cc62cd695c3945f76cda504d3fc8b1/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.10.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/82172431d881f821344bfb6df5b4f287/transformed/core-1.10.1/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.10.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/82172431d881f821344bfb6df5b4f287/transformed/core-1.10.1/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.10.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/82172431d881f821344bfb6df5b4f287/transformed/core-1.10.1/AndroidManifest.xml:23:9-81
+permission#com.keilim.kiosk.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.10.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/82172431d881f821344bfb6df5b4f287/transformed/core-1.10.1/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.10.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/82172431d881f821344bfb6df5b4f287/transformed/core-1.10.1/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.10.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/82172431d881f821344bfb6df5b4f287/transformed/core-1.10.1/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.10.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/82172431d881f821344bfb6df5b4f287/transformed/core-1.10.1/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.10.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/82172431d881f821344bfb6df5b4f287/transformed/core-1.10.1/AndroidManifest.xml:26:22-94
+uses-permission#com.keilim.kiosk.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.10.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/82172431d881f821344bfb6df5b4f287/transformed/core-1.10.1/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.10.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/82172431d881f821344bfb6df5b4f287/transformed/core-1.10.1/AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/e667b3669403638640283a5b28081642/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/e667b3669403638640283a5b28081642/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/e667b3669403638640283a5b28081642/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78

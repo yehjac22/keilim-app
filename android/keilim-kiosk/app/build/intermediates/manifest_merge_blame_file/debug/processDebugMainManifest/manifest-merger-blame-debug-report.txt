@@ -1,0 +1,87 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.keilim.kiosk"
+4    android:versionCode="1776813811"
+5    android:versionName="1.202604211923" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:3:5-67
+11-->/Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:3:22-64
+12
+13    <permission
+13-->[androidx.core:core:1.10.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/82172431d881f821344bfb6df5b4f287/transformed/core-1.10.1/AndroidManifest.xml:22:5-24:47
+14        android:name="com.keilim.kiosk.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+14-->[androidx.core:core:1.10.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/82172431d881f821344bfb6df5b4f287/transformed/core-1.10.1/AndroidManifest.xml:23:9-81
+15        android:protectionLevel="signature" />
+15-->[androidx.core:core:1.10.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/82172431d881f821344bfb6df5b4f287/transformed/core-1.10.1/AndroidManifest.xml:24:9-44
+16
+17    <uses-permission android:name="com.keilim.kiosk.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+17-->[androidx.core:core:1.10.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/82172431d881f821344bfb6df5b4f287/transformed/core-1.10.1/AndroidManifest.xml:26:5-97
+17-->[androidx.core:core:1.10.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/82172431d881f821344bfb6df5b4f287/transformed/core-1.10.1/AndroidManifest.xml:26:22-94
+18
+19    <application
+19-->/Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:5:5-22:19
+20        android:allowBackup="true"
+20-->/Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:6:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.10.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/82172431d881f821344bfb6df5b4f287/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
+22        android:debuggable="true"
+23        android:extractNativeLibs="true"
+24        android:label="Keilim Kiosk"
+24-->/Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:7:9-37
+25        android:networkSecurityConfig="@xml/network_security_config"
+25-->/Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:9:9-69
+26        android:supportsRtl="true"
+26-->/Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:10:9-35
+27        android:theme="@style/Theme.KeilimKiosk"
+27-->/Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:11:9-49
+28        android:usesCleartextTraffic="true" >
+28-->/Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:8:9-44
+29        <activity
+29-->/Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:12:9-21:20
+30            android:name="com.keilim.kiosk.MainActivity"
+30-->/Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:13:13-41
+31            android:exported="true"
+31-->/Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:14:13-36
+32            android:screenOrientation="portrait" >
+32-->/Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:15:13-49
+33            <intent-filter>
+33-->/Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:16:13-20:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->/Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:17:17-69
+34-->/Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:17:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->/Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:19:17-77
+36-->/Users/yehudahjacbs/Documents/GitHub/keilim-app/android/keilim-kiosk/app/src/main/AndroidManifest.xml:19:27-74
+37            </intent-filter>
+38        </activity>
+39
+40        <provider
+40-->[androidx.emoji2:emoji2:1.2.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/d2cc62cd695c3945f76cda504d3fc8b1/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+41            android:name="androidx.startup.InitializationProvider"
+41-->[androidx.emoji2:emoji2:1.2.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/d2cc62cd695c3945f76cda504d3fc8b1/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+42            android:authorities="com.keilim.kiosk.androidx-startup"
+42-->[androidx.emoji2:emoji2:1.2.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/d2cc62cd695c3945f76cda504d3fc8b1/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+43            android:exported="false" >
+43-->[androidx.emoji2:emoji2:1.2.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/d2cc62cd695c3945f76cda504d3fc8b1/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+44            <meta-data
+44-->[androidx.emoji2:emoji2:1.2.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/d2cc62cd695c3945f76cda504d3fc8b1/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+45                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+45-->[androidx.emoji2:emoji2:1.2.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/d2cc62cd695c3945f76cda504d3fc8b1/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+46                android:value="androidx.startup" />
+46-->[androidx.emoji2:emoji2:1.2.0] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/d2cc62cd695c3945f76cda504d3fc8b1/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+47            <meta-data
+47-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/e667b3669403638640283a5b28081642/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+48                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+48-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/e667b3669403638640283a5b28081642/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+49                android:value="androidx.startup" />
+49-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/yehudahjacbs/.gradle/caches/9.4.1/transforms/e667b3669403638640283a5b28081642/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+50        </provider>
+51    </application>
+52
+53</manifest>

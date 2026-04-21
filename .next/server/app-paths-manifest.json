@@ -1,0 +1,18 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/payments/cloudim/route": "app/api/payments/cloudim/route.js",
+  "/api/wled/route": "app/api/wled/route.js",
+  "/api/debug/sheets/route": "app/api/debug/sheets/route.js",
+  "/api/utensils/route": "app/api/utensils/route.js",
+  "/android/page": "app/android/page.js",
+  "/halachos/page": "app/halachos/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/lights/page": "app/lights/page.js",
+  "/donate/page": "app/donate/page.js",
+  "/utensil/[id]/page": "app/utensil/[id]/page.js",
+  "/materials/page": "app/materials/page.js",
+  "/procedure/page": "app/procedure/page.js",
+  "/rules/page": "app/rules/page.js",
+  "/tap-to-pay/page": "app/tap-to-pay/page.js",
+  "/page": "app/page.js"
+}
