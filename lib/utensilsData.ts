@@ -21,7 +21,10 @@ const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY || "";
 const SHEET_RANGE = process.env.SHEET_RANGE || "Sheet1!A:H1000";
 
 const CACHE_DURATION_MS = 60 * 1000;
-const CACHE_PATH = path.join(process.cwd(), "data", "utensils-cache.json");
+// Vercel's filesystem is read-only except /tmp — use /tmp when running on Vercel.
+const CACHE_PATH = process.env.VERCEL
+  ? path.join("/tmp", "utensils-cache.json")
+  : path.join(process.cwd(), "data", "utensils-cache.json");
 
 let memoryCache: GetUtensilsResult | null = null;
 let memoryCacheAt = 0;
@@ -160,7 +163,13 @@ export async function getUtensils(forceRefresh = false): Promise<GetUtensilsResu
       const sheetItems = await fetchFromGoogleSheets();
 
       if (sheetItems.length > 0) {
-        const updatedAt = await writeDiskCache(sheetItems);
+        let updatedAt: string;
+        try {
+          updatedAt = await writeDiskCache(sheetItems);
+        } catch {
+          // Disk write failed (e.g. read-only filesystem on Vercel) — still return Sheets data.
+          updatedAt = new Date().toISOString();
+        }
         memoryCache = {
           items: sheetItems,
           source: "google-sheets",
@@ -170,7 +179,7 @@ export async function getUtensils(forceRefresh = false): Promise<GetUtensilsResu
         return memoryCache;
       }
     } catch {
-      // Falls through to local cache.
+      // Sheets fetch failed — falls through to local cache.
     }
   }
 
