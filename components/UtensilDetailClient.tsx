@@ -140,9 +140,16 @@ export default function UtensilDetailClient({
         </div>
       ) : null}
 
-      <div className="flex items-start gap-4">
-        <div className="relative h-24 w-24 overflow-hidden rounded-2xl border bg-gray-100">
-          <UtensilImage id={utensil.id} name={utensil.name} sizes="96px" className="object-contain" priority />
+      <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-start sm:gap-6">
+        <div className="relative h-32 w-32 overflow-hidden rounded-3xl border border-slate-200 bg-gray-100 shadow-sm sm:h-40 sm:w-40">
+          <UtensilImage
+            id={utensil.id}
+            name={utensil.name}
+            imageUrl={utensil.imageUrl}
+            sizes="(max-width: 640px) 128px, 160px"
+            className="object-contain"
+            priority
+          />
         </div>
         <div>
           <h1 className="text-2xl font-bold">{utensil.name}</h1>

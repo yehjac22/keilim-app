@@ -7,6 +7,7 @@ type UtensilImageProps = {
   id: string;
   name: string;
   sizes: string;
+  imageUrl?: string;
   className?: string;
   priority?: boolean;
 };
@@ -17,12 +18,17 @@ export default function UtensilImage({
   id,
   name,
   sizes,
+  imageUrl,
   className = "object-cover",
   priority = false,
 }: UtensilImageProps) {
+  const normalizedImageUrl = imageUrl?.trim();
   const candidates = useMemo(
-    () => IMAGE_EXTENSIONS.map((extension) => `/utensils/${id}.${extension}`),
-    [id]
+    () => [
+      ...(normalizedImageUrl ? [normalizedImageUrl] : []),
+      ...IMAGE_EXTENSIONS.map((extension) => `/utensils/${id}.${extension}`),
+    ],
+    [id, normalizedImageUrl]
   );
   const [index, setIndex] = useState(0);
 

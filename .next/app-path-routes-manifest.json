@@ -1,18 +1,18 @@
 {
-  "/_not-found/page": "/_not-found",
   "/api/payments/cloudim/route": "/api/payments/cloudim",
   "/api/wled/route": "/api/wled",
+  "/_not-found/page": "/_not-found",
   "/api/debug/sheets/route": "/api/debug/sheets",
   "/api/utensils/route": "/api/utensils",
   "/android/page": "/android",
-  "/halachos/page": "/halachos",
   "/contact/page": "/contact",
-  "/lights/page": "/lights",
   "/donate/page": "/donate",
-  "/utensil/[id]/page": "/utensil/[id]",
+  "/halachos/page": "/halachos",
+  "/lights/page": "/lights",
   "/materials/page": "/materials",
-  "/procedure/page": "/procedure",
   "/rules/page": "/rules",
+  "/procedure/page": "/procedure",
   "/tap-to-pay/page": "/tap-to-pay",
+  "/utensil/[id]/page": "/utensil/[id]",
   "/page": "/"
 }

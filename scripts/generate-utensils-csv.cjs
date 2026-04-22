@@ -15,7 +15,7 @@ const arrayCode = match[1]
   .replace(/\bV\b/g, '"varies"');
 
 const utensils = vm.runInNewContext(arrayCode);
-const headers = ['id', 'name', 'category', 'tevila', 'brocha', 'notes', 'debates', 'tags'];
+const headers = ['id', 'name', 'category', 'tevila', 'brocha', 'notes', 'debates', 'tags', 'image_url'];
 
 function escapeCsv(value) {
   const text = value == null ? '' : String(value);
@@ -35,6 +35,7 @@ for (const utensil of utensils) {
       utensil.notes || '',
       utensil.debates || '',
       Array.isArray(utensil.tags) ? utensil.tags.join(', ') : '',
+      utensil.imageUrl || '',
     ]
       .map(escapeCsv)
       .join(',')

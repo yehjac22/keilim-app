@@ -7,7 +7,7 @@ export const dynamic = "force-dynamic";
 export async function GET() {
   const hasSheetsId = Boolean(process.env.GOOGLE_SHEETS_ID);
   const hasApiKey = Boolean(process.env.GOOGLE_API_KEY);
-  const sheetRange = process.env.SHEET_RANGE || "Sheet1!A:H1000";
+  const sheetRange = process.env.SHEET_RANGE || "Sheet1!A:I1000";
 
   if (!hasSheetsId || !hasApiKey) {
     return NextResponse.json(

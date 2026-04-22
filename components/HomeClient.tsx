@@ -242,45 +242,52 @@ export default function HomeClient({
           <Link
             key={utensil.id}
             href={`/utensil/${utensil.id}`}
-            className="group rounded-2xl border bg-white p-4 shadow-sm transition hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500"
+            className="group overflow-hidden rounded-2xl border bg-white shadow-sm transition hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500"
           >
-            <div className="flex items-start gap-3">
-              <div className="relative h-10 w-10 flex-shrink-0 overflow-hidden rounded-xl border bg-gray-100">
-                <UtensilImage id={utensil.id} name={utensil.name} sizes="40px" className="object-cover" />
-              </div>
+            <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+              <div className="absolute inset-0 bg-gradient-to-b from-black/0 to-black/10" aria-hidden />
+              <UtensilImage
+                id={utensil.id}
+                name={utensil.name}
+                imageUrl={utensil.imageUrl}
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                className="object-cover transition duration-300 group-hover:scale-[1.03]"
+              />
+            </div>
 
-              <div className="min-w-0 flex-1">
-                <h3 className="truncate text-base font-semibold leading-snug group-hover:underline">
+            <div className="space-y-2 p-4">
+              <div className="min-w-0">
+                <h3 className="line-clamp-2 text-lg font-semibold leading-snug group-hover:underline">
                   {utensil.name}
                 </h3>
                 <span className="text-xs text-gray-500">{getCategoryMeta(utensil.category).label}</span>
               </div>
 
-              <div className="flex flex-shrink-0 flex-col items-end gap-1">
-                <div className="flex items-center gap-1.5">
-                  <span className="text-xs text-gray-400">Tevila</span>
+              <div className="flex items-center gap-4 text-xs">
+                <div className="inline-flex items-center gap-1.5 text-gray-500">
+                  <span>Tevila</span>
                   <Dot need={utensil.tevila} />
                 </div>
-                <div className="flex items-center gap-1.5">
-                  <span className="text-xs text-gray-400">Brocha</span>
+                <div className="inline-flex items-center gap-1.5 text-gray-500">
+                  <span>Brocha</span>
                   <Dot need={utensil.brocha} />
                 </div>
               </div>
+
+              {utensil.notes && <p className="line-clamp-2 text-sm text-gray-600">{utensil.notes}</p>}
+
+              {utensil.debates && (
+                <div className="flex items-center gap-1.5 text-xs text-amber-700">
+                  <span
+                    className="inline-flex h-3.5 w-3.5 flex-shrink-0 items-center justify-center rounded-full border border-amber-400 font-bold leading-none text-amber-600"
+                    style={{ fontSize: "9px" }}
+                  >
+                    i
+                  </span>
+                  <span>Halachic debate - tap for details</span>
+                </div>
+              )}
             </div>
-
-            {utensil.notes && <p className="mt-2 line-clamp-2 text-sm text-gray-600">{utensil.notes}</p>}
-
-            {utensil.debates && (
-              <div className="mt-2 flex items-center gap-1.5 text-xs text-amber-700">
-                <span
-                  className="inline-flex h-3.5 w-3.5 flex-shrink-0 items-center justify-center rounded-full border border-amber-400 font-bold leading-none text-amber-600"
-                  style={{ fontSize: "9px" }}
-                >
-                  i
-                </span>
-                <span>Halachic debate - tap for details</span>
-              </div>
-            )}
           </Link>
         ))}
       </div>

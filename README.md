@@ -17,7 +17,7 @@ Create `.env.local` from `.env.example` and set:
 
 - `GOOGLE_SHEETS_ID`
 - `GOOGLE_API_KEY`
-- `SHEET_RANGE` (default: `Sheet1!A:H1000`)
+- `SHEET_RANGE` (default: `Sheet1!A:I1000`)
 
 Expected Google Sheet columns (row 1 is header):
 
@@ -29,6 +29,7 @@ Expected Google Sheet columns (row 1 is header):
 6. `notes`
 7. `debates`
 8. `tags` (comma/semicolon separated)
+9. `image_url` (optional direct image URL)
 
 ## Offline Persistence Behavior
 

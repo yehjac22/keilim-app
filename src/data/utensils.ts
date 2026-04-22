@@ -12,6 +12,7 @@ export type Utensil = {
   category: Category;
   tevila: Need;
   brocha: Need;
+  imageUrl?: string;
   notes?: string;
   /** Halachic debates or variant opinions with sources */
   debates?: string;
