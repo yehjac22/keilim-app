@@ -52,3 +52,6 @@ description: Use when building UI components, pages, layouts, or styling anythin
 - `overflow: hidden` can clip box shadows and dropdown menus
 - z-index wars: establish a z-index scale in your design tokens
 - Test in both light and dark mode if the project supports it
+
+## Stupidity
+-dont be stupid

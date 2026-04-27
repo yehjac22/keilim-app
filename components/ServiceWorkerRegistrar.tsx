@@ -25,7 +25,8 @@ export default function ServiceWorkerRegistrar() {
 
     const register = async () => {
       try {
-        await navigator.serviceWorker.register("/sw.js", { scope: "/" });
+        const registration = await navigator.serviceWorker.register("/sw.js", { scope: "/" });
+        void registration.update();
       } catch {
         // Service worker registration is best-effort for kiosk resiliency.
       }

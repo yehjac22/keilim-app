@@ -12,16 +12,9 @@ const NAV_ITEMS = [
   { href: "/materials", label: "Materials" },
   { href: "/halachos", label: "Halachos" },
   { href: "/lights", label: "Lights" },
-  { href: "/donate", label: "Donate" },
   { href: "/android", label: "Android" },
   { href: "/contact", label: "Contact" },
 ];
-
-function pillStyle(active: boolean): string {
-  return `whitespace-nowrap rounded-xl px-3 py-1 text-sm ring-1 ring-slate-200 shadow-sm bg-white/70 hover:bg-white transition ${
-    active ? "bg-white" : ""
-  }`;
-}
 
 const REQUIRED_TAPS = 7;
 const TAP_WINDOW_MS = 8000;
@@ -42,8 +35,14 @@ export default function TopBar() {
   const [maintenanceOpen, setMaintenanceOpen] = useState(false);
   const [statusMessage, setStatusMessage] = useState<string | null>(null);
   const [isBusy, setIsBusy] = useState(false);
+  const [drawerOpen, setDrawerOpen] = useState(false);
 
   const [onlineStatus, setOnlineStatus] = useState("unknown");
+
+  // Close drawer on route change
+  useEffect(() => {
+    setDrawerOpen(false);
+  }, [pathname]);
 
   useEffect(() => {
     if (typeof navigator === "undefined") {
@@ -156,91 +155,144 @@ export default function TopBar() {
     }
   }
 
+  function toggleDrawer() {
+    setDrawerOpen((current) => !current);
+  }
+
+  const pulltabHref = drawerOpen ? "#" : "#site-navigation-drawer";
+
   return (
     <>
+      {/* Left pulltab: primary kiosk trigger for opening navigation */}
+      <div className="fixed left-0 top-1/4 z-[70] flex">
+        <a
+          href={pulltabHref}
+          role="button"
+          onClick={(event) => {
+            event.preventDefault();
+            toggleDrawer();
+          }}
+          aria-label={drawerOpen ? "Close menu pulltab" : "Open menu pulltab"}
+          className="rounded-r-xl bg-sky-700 px-2 py-4 text-sm font-semibold text-white shadow-lg transition hover:bg-sky-900 active:bg-sky-900"
+        >
+          {drawerOpen ? "Close" : "Menu"}
+        </a>
+      </div>
+
+      {/* ── Slim sticky header ── */}
       <header className="sticky top-0 z-20 border-b border-slate-200 bg-gradient-to-r from-sky-50 to-emerald-50">
-        <div className="mx-auto w-full max-w-screen-xl px-3 sm:px-4">
-        <div className="hidden py-2 sm:block">
-          {!isHome && (
+        <div className="mx-auto flex h-12 w-full max-w-screen-xl items-center gap-3 px-3 sm:px-4">
+          <div className="h-11 w-11 shrink-0" aria-hidden="true" />
+
+          {/* Centre: logo */}
+          <Link
+            href="/"
+            onClick={handleMaintenanceTap}
+            className="flex-1 text-center text-lg font-extrabold tracking-tight text-slate-800"
+          >
+            Keilim
+          </Link>
+
+          {/* Right: explicit home shortcut when not on home */}
+          {!isHome ? (
             <Link
               href="/"
-              className="absolute left-4 top-1/2 -translate-y-1/2 text-4xl font-extrabold text-slate-800"
               aria-label="Back to home"
-              title="Back to home"
+              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-2xl font-extrabold text-slate-700 hover:bg-white/60 transition"
             >
               ←
             </Link>
+          ) : (
+            <div className="h-9 w-9 shrink-0" />
           )}
-          <div className="grid grid-cols-9 items-center gap-2">
-            <Link
-              href="/"
-              onClick={handleMaintenanceTap}
-              className="justify-self-center text-xl font-extrabold tracking-tight text-slate-800"
-            >
-              Keilim
-            </Link>
-            {NAV_ITEMS.map((item, index) => {
-              const active = pathname === item.href;
-              const alignClass =
-                index === 0
-                  ? "justify-self-start"
-                  : index === 1
-                    ? "justify-self-center"
-                    : "justify-self-end";
-
-              return (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className={`${alignClass} text-center whitespace-nowrap rounded-2xl px-3 py-1.5 text-sm ring-1 ring-slate-200 shadow-sm bg-white/70 hover:bg-white transition ${
-                    active ? "bg-white" : ""
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              );
-            })}
-          </div>
-        </div>
-
-        <div className="sm:hidden">
-          <div className="relative flex items-center justify-center py-1">
-            {!isHome && (
-              <Link
-                href="/"
-                className="absolute left-4 top-1/2 -translate-y-1/2 text-4xl font-extrabold text-slate-800"
-                aria-label="Back to home"
-                title="Back to home"
-              >
-                ←
-              </Link>
-            )}
-
-            <Link
-              href="/"
-              onClick={handleMaintenanceTap}
-              className="text-lg font-extrabold tracking-tight text-slate-800"
-            >
-              Keilim
-            </Link>
-          </div>
-
-          <nav className="-mx-3 overflow-x-auto px-3 pb-1 no-scrollbar">
-            <div className="flex items-center gap-2">
-              {NAV_ITEMS.map((item) => {
-                const active = pathname === item.href;
-                return (
-                  <Link key={item.href} href={item.href} className={pillStyle(active)}>
-                    {item.label}
-                  </Link>
-                );
-              })}
-            </div>
-          </nav>
-        </div>
         </div>
       </header>
 
+      {/* ── Drawer backdrop ── */}
+      {drawerOpen && (
+        <div
+          className="fixed inset-0 z-30 bg-slate-900/40 backdrop-blur-sm"
+          onClick={() => setDrawerOpen(false)}
+          aria-hidden="true"
+        />
+      )}
+
+      {/* ── Slide-out drawer ── */}
+      <nav
+        id="site-navigation-drawer"
+        aria-label="Site navigation"
+        data-open={drawerOpen ? "true" : "false"}
+        className="fixed left-0 top-0 z-[80] flex h-full w-64 flex-col bg-white shadow-2xl transition-transform duration-300 ease-in-out"
+        style={{ transform: drawerOpen ? "translateX(0)" : "translateX(-110%)" }}
+      >
+        {/* Drawer header */}
+        <div className="flex items-center justify-between border-b border-slate-100 px-4 py-3">
+          <span className="text-lg font-extrabold tracking-tight text-slate-800">Keilim</span>
+          <a
+            href="#"
+            role="button"
+            aria-label="Close navigation"
+            onClick={(event) => {
+              event.preventDefault();
+              setDrawerOpen(false);
+            }}
+            className="flex h-8 w-8 items-center justify-center rounded-lg text-slate-500 hover:bg-slate-100 transition"
+          >
+            <svg viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5">
+              <path fillRule="evenodd" clipRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" />
+            </svg>
+          </a>
+
+        </div>
+
+        {/* Nav links */}
+        <div className="flex-1 overflow-y-auto py-2">
+          {NAV_ITEMS.map((item) => {
+            const active = pathname === item.href;
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => setDrawerOpen(false)}
+                className={`flex items-center px-5 py-3 text-sm font-medium transition ${
+                  active
+                    ? "bg-sky-50 text-sky-700 font-semibold"
+                    : "text-slate-700 hover:bg-slate-50"
+                }`}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
+        </div>
+
+        {/* Donate CTA at drawer bottom */}
+        <div className="border-t border-slate-100 p-4">
+          <Link
+            href="/donate"
+            className={`block w-full rounded-xl py-3 text-center text-sm font-bold transition ${
+              pathname === "/donate"
+                ? "bg-emerald-700 text-white"
+                : "bg-emerald-600 text-white hover:bg-emerald-700"
+            }`}
+          >
+            Donate
+          </Link>
+        </div>
+      </nav>
+
+      {/* ── Donate pull-tab (right edge) ── */}
+      <Link
+        href="/donate"
+        aria-label="Donate"
+        className={`fixed right-0 top-1/2 z-30 -translate-y-1/2 select-none rounded-l-xl px-2 py-4 text-sm font-semibold text-white shadow-lg transition [writing-mode:vertical-lr] ${
+          pathname === "/donate" ? "bg-emerald-700" : "bg-emerald-600 hover:bg-emerald-700"
+        }`}
+      >
+        Donate
+      </Link>
+
+      {/* ── Maintenance modal ── */}
       {maintenanceOpen ? (
         <div className="fixed inset-0 z-50 flex items-end justify-center bg-slate-900/50 p-3 sm:items-center">
           <div className="w-full max-w-md rounded-2xl border border-slate-300 bg-white p-4 shadow-2xl">

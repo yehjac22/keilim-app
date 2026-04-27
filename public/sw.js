@@ -1,4 +1,4 @@
-const SW_CACHE_VERSION = "keilim-kiosk-v2";
+const SW_CACHE_VERSION = "keilim-kiosk-v3";
 const APP_SHELL_CACHE = `${SW_CACHE_VERSION}-app-shell`;
 const API_CACHE = `${SW_CACHE_VERSION}-api`;
 
@@ -89,18 +89,21 @@ self.addEventListener("fetch", (event) => {
   }
 
   event.respondWith(
-    caches.match(request).then((cached) => {
-      if (cached) {
-        return cached;
-      }
-
-      return fetch(request).then((response) => {
-        if (response.ok && request.url.startsWith(self.location.origin)) {
+    fetch(request)
+      .then((response) => {
+        if (response.ok) {
           const clone = response.clone();
           void caches.open(APP_SHELL_CACHE).then((cache) => cache.put(request, clone));
         }
         return response;
-      });
-    })
+      })
+      .catch(async () => {
+        const cached = await caches.match(request);
+        if (cached) {
+          return cached;
+        }
+
+        return new Response(null, { status: 504, statusText: "Gateway Timeout" });
+      })
   );
 });

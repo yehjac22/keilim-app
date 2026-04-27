@@ -64,3 +64,8 @@ button {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+/* Hash-link fallback for kiosk/webview environments where React tap handlers may not fire reliably. */
+#site-navigation-drawer:target {
+  transform: translateX(0) !important;
+}
