@@ -152,6 +152,16 @@ export default function TapToPayPage() {
             />
           </label>
 
+          <label className="text-sm text-slate-700 sm:col-span-2">
+            External Request ID (optional)
+            <input
+              value={externalRequestId}
+              onChange={(event) => setExternalRequestId(event.target.value)}
+              className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2"
+              placeholder="Leave blank to auto-generate"
+            />
+          </label>
+
           <label className="inline-flex items-center gap-2 text-sm text-slate-700">
             <input
               type="checkbox"
